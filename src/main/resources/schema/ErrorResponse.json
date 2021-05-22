@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Example error response",
+  "type": "object",
+  "properties": {
+    "reason": {
+      "$ref": "CommonTypes.json#/$defs/text"
+    },
+    "details": {
+      "$ref": "CommonTypes.json#/$defs/text"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "reason",
+    "timestamp"
+  ]
+}

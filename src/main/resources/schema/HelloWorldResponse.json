@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "An address similar to http://microformats.org/wiki/h-card",
+  "type": "object",
+  "properties": {
+    "greetings": {
+      "type": "string"
+    }
+  }
+}

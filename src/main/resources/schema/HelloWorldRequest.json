@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Hello World Request Schema",
+  "type": "object",
+  "$defs": {
+    "name": {
+      "type": "string",
+      "pattern": "^\\w+$"
+    },
+    "radius": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "number" },
+        "unit": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": ["km", "m"]
+            },
+            {
+              "type": "number",
+              "multipleOf": 10
+            }
+          ]
+        }
+      },
+      "required": ["value", "unit"]
+    }
+  },
+  "properties": {
+    "galaxy": { "$ref": "#/$defs/name" },
+    "planet": {
+      "type": "object",
+      "properties": {
+        "name": { "$ref": "#/$defs/name" },
+        "radius": { "$ref": "#/$defs/radius" }
+      },
+      "required": ["name", "radius"]
+    },
+    "greetingText": { "$ref": "CommonTypes.json#/$defs/text" }
+  },
+  "required": ["galaxy", "planet"]
+}
