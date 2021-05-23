@@ -1,10 +1,10 @@
 # Json Schema Spring Boot Demo
-Przykład wykorzystania Json Schema w aplikacji opartej o framework Spring Boot
+Przykład wykorzystania Json Schema w aplikacji opartej o framework Spring Boot.
 
 ## Uruchomienie
-Projekt został stworzony z wykorzystaniem Javy w wersji 1.8 oraz Spring Boot w wersji 2.4.4
+Projekt został stworzony z wykorzystaniem Javy w wersji 1.8 oraz Spring Boot w wersji 2.4.4.
 
-W celu uruchomienia apliakcji, najprościej zaimportować projekt do dowolnego IDE np. IntelliJ (najlepiej w wersji Ultimate dla wsparcia Spring Boot) lub Spring Tools Suite 4, a po zainstalowaniu zależności, uruchomić.
+W celu uruchomienia aplikacji, najprościej zaimportować projekt do dowolnego IDE np. IntelliJ (najlepiej w wersji Ultimate dla wsparcia Spring Boot) lub Spring Tools Suite 4, a po zainstalowaniu zależności, uruchomić.
 
 Aplikację można również uruchomić z linii poleceń przy pomocy narzędzia Maven. 
 Aby zbudować docelową paczkę należy wykonać polecenie:
